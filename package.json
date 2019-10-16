@@ -1,0 +1,28 @@
+{
+  "name": "@41north/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared eslint configs for the 41North organization",
+  "main": "base.js",
+  "repository": "https://github.com/41north/eslint-config",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "format": "prettier --write \"*.js\"",
+    "eslint:config:base": "eslint -c ./base.js --print-config ./base",
+    "eslint:config:node": "eslint -c ./node.js --print-config ./base"
+  },
+  "peerDependencies": {
+    "@41north/prettier-config": "1.0.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1"
+  },
+  "devDependencies": {
+    "@41north/prettier-config": "1.0.0",
+    "eslint": "^6.5.1",
+    "prettier": "^1.18.2"
+  },
+  "prettier": "@41north/prettier-config"
+}
